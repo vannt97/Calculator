@@ -1,0 +1,33 @@
+.calculator {
+  width: 400px;
+  margin: 30px auto;
+  border: 1px solid black;
+}
+.calculator_content {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  background-color: gray;
+}
+.calculator_display {
+  grid-column: 1 / span 5;
+  text-align: right;
+  border: 1px solid black;
+  padding: 5px;
+  background-color: white;
+  height: 40px;
+}
+.item-15 {
+  grid-column: 1 / span 2;
+}
+.item-14 {
+  grid-column-start: 5;
+  grid-row: 4/6;
+}
+.calculator_content > button {
+  padding: 10px;
+}
+.calculator_content button.active {
+  border: 1px solid blue;
+}
